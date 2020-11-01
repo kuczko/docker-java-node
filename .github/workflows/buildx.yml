@@ -43,7 +43,7 @@ jobs:
       - name: Prepare
         id: prepare
         run: |
-          DOCKER_IMAGE=timbru31/java-node
+          DOCKER_IMAGE=kuczko/java-node
 
           TAGZ=$(echo ${{ matrix.docker-file.tags }} | tr "," "\n")
           VERSION=${TAGZ[0]}
